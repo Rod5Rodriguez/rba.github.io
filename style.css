@@ -1,12 +1,19 @@
-body,
-html {
+html,
+body {
+  height: 100%;
+}
+
+body {
   width: 100%;
   height: 100%;
   font-family: 'Amari', sans-serif;
   background: url(Rodny.jpg) no-repeat center center fixed; 
+
+/*   These aren't needed anymore
   -webkit-background-size: cover;
   -moz-background-size: cover;
-  -o-background-size: cover;
+  -o-background-size: cover; */
+
   background-size: cover;
 }
 
@@ -46,3 +53,10 @@ h1{
 .btn-cu {
   padding: 0.5rem 2rem;
 }
+
+@media screen and (min-width: 480px) {
+  body {
+    background: url(Rodny.jpg) no-repeat center top fixed; 
+  }
+}
+
